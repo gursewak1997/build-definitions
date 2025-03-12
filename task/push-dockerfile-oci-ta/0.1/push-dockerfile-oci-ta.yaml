@@ -58,7 +58,7 @@ spec:
         - use
         - $(params.SOURCE_ARTIFACT)=/var/workdir/source
     - name: push
-      image: quay.io/konflux-ci/oras:latest@sha256:8bc04c510d6f15b223227d7e7050726bc6a8b83822c344df1f94d566f99d2e14
+      image: quay.io/konflux-ci/oras:latest@sha256:7e32f0a871cd45645ed8a85ffcedbd2a95d36acac66e4fa372d6880abbbeb860
       workingDir: /var/workdir
       env:
         - name: IMAGE
