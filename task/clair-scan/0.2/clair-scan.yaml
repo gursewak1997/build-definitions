@@ -136,7 +136,7 @@ spec:
         images_processed=$(echo "${images_processed_template/\[%s]/[$digests_processed_string]}")
         echo "$images_processed" > images-processed.json
     - name: oci-attach-report
-      image: quay.io/konflux-ci/oras:latest@sha256:76f2f7682d32902fec34753c11f414756d0e88070d07658a35e71760ef928b71
+      image: quay.io/konflux-ci/oras:latest@sha256:43098ef6981cb25bb0f9976c8753ebf7ab202e045511acb4ee449f2cbdb33559
       workingDir: /tekton/home
       env:
         - name: IMAGE_URL

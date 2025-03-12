@@ -289,7 +289,7 @@ spec:
         fi
         echo "${TEST_OUTPUT:-${ERROR_OUTPUT}}" | tee "$(results.TEST_OUTPUT.path)"
     - name: upload
-      image: quay.io/konflux-ci/oras:latest@sha256:76f2f7682d32902fec34753c11f414756d0e88070d07658a35e71760ef928b71
+      image: quay.io/konflux-ci/oras:latest@sha256:43098ef6981cb25bb0f9976c8753ebf7ab202e045511acb4ee449f2cbdb33559
       workingDir: /var/workdir/source
       env:
         - name: IMAGE_URL

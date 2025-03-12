@@ -466,7 +466,7 @@ spec:
         fi
         popd
     - name: save-related-images
-      image: quay.io/konflux-ci/oras:latest@sha256:76f2f7682d32902fec34753c11f414756d0e88070d07658a35e71760ef928b71
+      image: quay.io/konflux-ci/oras:latest@sha256:43098ef6981cb25bb0f9976c8753ebf7ab202e045511acb4ee449f2cbdb33559
       script: |
         #!/usr/bin/env bash
         set -euo pipefail
@@ -477,7 +477,7 @@ spec:
         attach-helper --subject "${IMAGE_URL}@${IMAGE_DIGEST}" --media-type-name "related-images+json" --digestfile "$(results.RELATED_IMAGES_DIGEST.path)" \
           /shared/related-images.json
     - name: save-rendered-catalog
-      image: quay.io/konflux-ci/oras:latest@sha256:76f2f7682d32902fec34753c11f414756d0e88070d07658a35e71760ef928b71
+      image: quay.io/konflux-ci/oras:latest@sha256:43098ef6981cb25bb0f9976c8753ebf7ab202e045511acb4ee449f2cbdb33559
       script: |
         #!/usr/bin/env bash
         set -euo pipefail
